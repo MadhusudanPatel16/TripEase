@@ -1,0 +1,73 @@
+.bus-details-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .bus-details-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .bus-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .bus-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .bus-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bus-image {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .bus-info {
+    text-align: left;
+    flex-grow: 1;
+  }
+  
+  .bus-info h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .bus-info p {
+    margin: 5px 0;
+  }
+  
+  .view-bus-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-bus-button:hover {
+    background-color: #0056b3;
+  }
+  

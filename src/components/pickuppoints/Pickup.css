@@ -1,0 +1,44 @@
+.pickup-points-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .pickup-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .pickup-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pickup-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pickup-card h3 {
+    margin-bottom: 5px;
+    color: #007bff;
+  }
+  
+  .pickup-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  

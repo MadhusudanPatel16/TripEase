@@ -1,0 +1,46 @@
+.signin-container {
+    height: 100vh;
+    background: url("./signimage.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    width: 350px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2); /* Transparency effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input.form-control {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000;
+  }
+  
+  input::placeholder {
+    color: #333;
+  }
+  
+  .btn-secondary {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .text-primary {
+    color: white !important;
+  }
+  
+  .text-secondary {
+    color: white !important;
+  }
+  
