@@ -28,10 +28,15 @@ function SignIn() {
       console.log("✅ Login Response:", response.data); // ✅ Check API Response
   
       localStorage.setItem("authToken", response.data.token);
-  
-      dispatch(setUser(response.data)); // ✅ Redux me user bhejne ki koshish
-      console.log("✅ Dispatched setUser:", response.data); // ✅ Check Redux Dispatch
-  
+
+
+      dispatch(setUser({
+        user: response.data.user,
+        token: response.data.token
+      })); // ✅ Redux me user bhejne ki koshish
+      console.log("✅ Dispatched setUser:", response.data.user); // ✅ Check Redux Dispatch
+      console.log("✅ Dispatched setUser:", response.data.token); // ✅ Check Redux Dispatch
+
       toast.success("Sign in successful!");
       navigate("/");
     } catch (err) {
@@ -39,7 +44,7 @@ function SignIn() {
       toast.error(err.response?.data?.error || "Something went wrong");
     }
   };
-  
+
   // 🔹 Send OTP for Password Reset
   const handleSendOtp = async () => {
     try {
